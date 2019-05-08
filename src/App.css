@@ -19,17 +19,19 @@
 }
 
 .home {
-    /* border: 5px palegoldenrod solid; */
     background-color: lightgray;
 }
 
 .login {
-    /* border: 2px green solid; */
-    background-color: gray;
-    /* padding: 20px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.input-fields {
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
 }
 
 .userpage {
