@@ -2,21 +2,21 @@ import React from 'react';
 import Login from './components/Login';
 import UserContext from './UserContext';
 import UserPage from './components/UserPage';
-import Users from './Users';
+import { FAKE_USER } from './api';
 
 class MainPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { currentUser: Users.me.firstName };
+        this.state = { currentUser: null };
     }
 
     handleLogin = user => {
-        console.log('logging in: ', Users.me.lastName);
+        console.log('logging in: ', FAKE_USER.firstName);
         // this.setState({ currentUser: user });
     };
 
     handleLogout = () => {
-        console.log('logging out: ', Users.me.pet);
+        console.log('logging out: ', FAKE_USER.pet);
         // this.setState({ currentUser: null });
     };
 
